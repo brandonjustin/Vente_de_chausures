@@ -4,13 +4,11 @@ const Image = require("./model/Images");
 const url = "mongodb://localhost:27017/ImageLoading";
 const app = express();
 
-mongoose.set("strictQuery", true);
-mongoose.connect(url)
-.then(()=>{
+
 
 app.listen(3000, () => {
   "App running on port 3000";
-});
+
 })
 .catch((err)=>{
   console.log(err);
